@@ -1,0 +1,1 @@
+Muje google Gemini jesa ai app bana ke do
