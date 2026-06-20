@@ -1,0 +1,61 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column-reverse; }
+.mode-landscape .sl-content { width: 55%; }
+.mode-portrait .sl-content { width: 100%; flex: 1; }
+.mode-landscape .sl-visual { width: 45%; }
+.mode-portrait .sl-visual { width: 100%; height: 38%; }
+.mode-landscape .sl-headline { font-size: 2.75rem; line-height: 1.15; }
+.mode-portrait .sl-headline { font-size: 2rem; line-height: 1.2; }
+</style>
+
+<section class="w-full h-full overflow-hidden bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Content Column -->
+    <div class="sl-content flex flex-col justify-between p-12">
+      <div>
+        <!-- Label -->
+        <div class="flex items-center gap-2 mb-8">
+          <div class="w-9 h-9 bg-violet-600 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <span class="text-xs font-bold tracking-widest uppercase text-violet-600">AI Chat Assistant</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="sl-headline font-black text-slate-900 mb-5">
+          Your personal AI,<br/>always ready<br/>to help.
+        </h1>
+
+        <!-- Tagline -->
+        <p class="text-slate-500 text-base leading-relaxed max-w-xs">
+          Ask anything. Generate anything. A Gemini-inspired AI assistant — clean, fast, and entirely yours.
+        </p>
+      </div>
+
+      <!-- Attribution -->
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Visual Column -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=modern+AI+chatbot+assistant+interface+glowing+purple+violet+indigo+chat+bubbles+neural+network+clean+minimal+dark+background+futuristic+digital"
+        alt="AI Chat Assistant Visual"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-transparent pointer-events-none"></div>
+      <!-- Floating badge -->
+      <div class="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-lg">
+        <p class="text-xs font-semibold text-slate-700">Powered by AI</p>
+        <p class="text-xs text-slate-400 mt-0.5">Gemini-inspired experience</p>
+      </div>
+    </div>
+
+  </div>
+</section>
